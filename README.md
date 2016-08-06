@@ -5,7 +5,9 @@ How to build a typescript library for just install npm -i and extend their class
 ## What to expect with this example?
 
 ```javascript
-// app.ts
+// $ npm install animal_module
+
+// app.ts file
 import * as animal_module from 'animal_module';
 
 class Snake extends animal_module.Animal {
