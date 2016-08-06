@@ -1,3 +1,9 @@
+/*
+    If you like more specific...
+*/
+// import { Animal } from 'animal_module';
+// class Snake extends Animal {
+
 import * as animal_module from 'animal_module';
 
 class Snake extends animal_module.Animal {
