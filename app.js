@@ -19,3 +19,6 @@ var Snake = (function (_super) {
 }(animal_module.Animal));
 var sam = new Snake('Sammy the Python');
 sam.move();
+var animal_module_1 = require('animal_module');
+var mybox = new animal_module_1.Things.Box();
+console.log('mybox size:', mybox.size);

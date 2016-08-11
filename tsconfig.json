@@ -1,5 +1,16 @@
 {
     "compilerOptions": {
-        "sourceMap":  false
-    }
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "dist/tsconfig.outDir",
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "sourceMap": false
+    },
+    "exclude": [
+        "bower_components",
+        "node_modules"
+    ]
 }
