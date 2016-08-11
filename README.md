@@ -1,39 +1,28 @@
 # typescript_node_module_example
 
-How to build a typescript library for just install npm -i and extend their classes.
+This is a library for test install and import from a [total different project](https://github.com/pablorsk/typescript-import-es6-module).
 
-## What to expect with this example?
+If you import this library to your project you can do:
 
-```javascript
-// $ npm install animal_module
+- import a particular module
+- extend classes
+- use interfaces on your project
 
-// app.ts file
-import * as animal_module from 'animal_module';
+This library is published on [NPM packages](https://www.npmjs.com/package/typescript_module_example).
 
-class Snake extends animal_module.Animal {
-
-    constructor(name: string) { super(name); }
-
-    move(distanceInMeters: number = 5) {
-        console.log('Slithering...');
-        super.move(distanceInMeters);
-    }
-}
-
-let sam = new Snake('Sammy the Python');
-sam.move();
-```
-
-## Expected result
+## Soft testing of this library
 
 ```bash
-$ node app.js
+$ node packagetest.js
 Slithering...
 Sammy the Python moved 5m.
-Galloping...
-Tommy the Palomino moved 34m.
+mybox size: 5
 ```
 
-## Notes
+If you like test import from node_modules, like `import 'typescript_module_example'`, please go to [this project](https://github.com/pablorsk/typescript-import-es6-module).
 
-- All .js files are automatically generated (check tsconfig.json)
+## Publishing this package
+
+```bash
+npm publish
+```

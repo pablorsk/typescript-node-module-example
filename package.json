@@ -1,16 +1,22 @@
 {
   "name": "animal_module_example",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "An example module written in TypeScript",
   "main": "./dist/animal.js",
-  "typings": "./dist/tsd.d.ts",
+  "typings": "./dist/animal.d.ts",
   "scripts": {
-    "prepublish": "cp -Rf src/animal.js dist/",
+    "dist": "tsc -d --module commonjs --sourceMap src/animal.ts --outDir ./dist/",
+    "prepublish": "npm run dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+      "dist/*",
+      "LICENCE",
+      "README.md"
+  ],
   "author": "Pablo Reyes",
   "license": "MIT",
   "devDependencies": {
-    "typings": "^1.3.2"
+    "tsc": "^1.20150623.0"
   }
 }

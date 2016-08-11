@@ -15,6 +15,7 @@ export module Things {
         another_param?: Number;
     }
 }
+
 // export default Things;
 export module Things {
     export class Box implements IParams {

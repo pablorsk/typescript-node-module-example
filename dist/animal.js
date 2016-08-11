@@ -1,4 +1,3 @@
-"use strict";
 var Animal = (function () {
     function Animal(theName) {
         this.name = 'a';
@@ -9,8 +8,9 @@ var Animal = (function () {
         console.log(this.name + " moved " + distanceInMeters + "m.");
     };
     return Animal;
-}());
+})();
 exports.Animal = Animal;
+// export default Things;
 var Things;
 (function (Things) {
     var Box = (function () {
@@ -18,6 +18,7 @@ var Things;
             this.size = 5;
         }
         return Box;
-    }());
+    })();
     Things.Box = Box;
 })(Things = exports.Things || (exports.Things = {}));
+//# sourceMappingURL=animal.js.map

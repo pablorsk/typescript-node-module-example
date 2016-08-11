@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var animal_module = require('animal_module');
+var animal_module = require('./src/animal');
 var Snake = (function (_super) {
     __extends(Snake, _super);
     function Snake(name) {
@@ -19,6 +19,6 @@ var Snake = (function (_super) {
 }(animal_module.Animal));
 var sam = new Snake('Sammy the Python');
 sam.move();
-var animal_module_1 = require('animal_module');
-var mybox = new animal_module_1.Things.Box();
+var animal_1 = require('./src/animal');
+var mybox = new animal_1.Things.Box();
 console.log('mybox size:', mybox.size);

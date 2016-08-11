@@ -4,7 +4,7 @@
 // import { Animal } from 'animal_module';
 // class Snake extends Animal {
 
-import * as animal_module from 'animal_module';
+import * as animal_module from './src/animal';
 
 class Snake extends animal_module.Animal {
 
@@ -19,6 +19,6 @@ class Snake extends animal_module.Animal {
 let sam = new Snake('Sammy the Python');
 sam.move();
 
-import { Things } from 'animal_module';
+import { Things } from './src/animal';
 let mybox = new Things.Box();
 console.log('mybox size:',  mybox.size);

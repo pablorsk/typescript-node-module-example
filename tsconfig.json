@@ -2,15 +2,14 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "outDir": "dist/tsconfig.outDir",
         "experimentalDecorators": true,
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
         "moduleResolution": "node",
+        "declaration": false,
         "sourceMap": false
     },
     "exclude": [
-        "bower_components",
         "node_modules"
     ]
 }
